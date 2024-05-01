@@ -1,0 +1,14 @@
+
+<form action="/" method="POST" enctype="multipart/form-data">
+    <h3>画像をアップロードする</h3>
+    <input type="file" name="imageFile" accept="image/*">
+    <input type="submit">
+</form>
+
+<div>
+    {{#each rows}}
+    <p>保存画像一覧</p>
+    <img src="{{this.imageName}}" alt="">
+    <p>{{this.imageName}}</p>
+    {{/each}}
+</div>
